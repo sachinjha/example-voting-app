@@ -11,5 +11,8 @@ spec:
         app: result
     spec:
       containers:
-      - image: dockersamples/examplevotingapp_result:before
+      - image: mycluster.icp:8500/default/result:latest
         name: result
+        imagePullPolicy: IfNotPresent
+      imagePullSecrets:
+        - name: registry-secret

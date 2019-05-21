@@ -11,5 +11,8 @@ spec:
         app: worker
     spec:
       containers:
-      - image: dockersamples/examplevotingapp_worker
+      - image: mycluster.icp:8500/default/worker:latest
         name: worker
+        imagePullPolicy: IfNotPresent
+      imagePullSecrets:
+        - name: registry-secret
