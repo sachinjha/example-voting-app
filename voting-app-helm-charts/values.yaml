@@ -37,3 +37,10 @@ result:
     type: NodePort
     port: 80
 
+db:
+  dataPVC:
+    name: db-pvc
+    storageClassName: 
+    useDynamicProvisioning: true
+    accessMode: ReadWriteOnce
+    size: 5Gi
