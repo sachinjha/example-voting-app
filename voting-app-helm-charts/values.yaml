@@ -10,7 +10,7 @@ worker:
 
   image:
     repository: mycluster.icp:8500/default/worker
-    tag: latest
+    tag: 0.1.0
     pullPolicy: IfNotPresent
 
 vote:
@@ -18,7 +18,7 @@ vote:
 
   image:
     repository: mycluster.icp:8500/default/vote
-    tag: latest
+    tag: 0.1.0
     pullPolicy: IfNotPresent
 
   service:
@@ -30,7 +30,7 @@ result:
 
   image:
     repository: mycluster.icp:8500/default/result
-    tag: latest
+    tag: 0.1.0
     pullPolicy: IfNotPresent
 
   service:

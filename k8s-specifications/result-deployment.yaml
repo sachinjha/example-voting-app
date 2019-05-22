@@ -11,7 +11,7 @@ spec:
         app: result
     spec:
       containers:
-      - image: mycluster.icp:8500/default/result:latest
+      - image: mycluster.icp:8500/default/result:0.1.0
         name: result
         imagePullPolicy: IfNotPresent
       imagePullSecrets:
