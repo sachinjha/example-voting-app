@@ -11,7 +11,7 @@ spec:
         app: worker
     spec:
       containers:
-      - image: mycluster.icp:8500/default/worker:latest
+      - image: mycluster.icp:8500/default/worker:0.1.0
         name: worker
         imagePullPolicy: IfNotPresent
       imagePullSecrets:
